@@ -16,3 +16,14 @@ function addProduct(name, stock, price, status){
     products.push(newProduct);
     return newProduct;
 }
+
+function updateProduct(i, newName, newStock, newPrice, newStatus){
+    products[i].name = newName
+    products[i].stock = newStock
+    products[i].price = newPrice
+    products[i].status = newStatus
+}
+
+function deleteProduct(i){
+    products.splice(i, 1)
+}

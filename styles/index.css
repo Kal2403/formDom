@@ -6,7 +6,8 @@
 
 main{
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
+    
 }
 
 #sectionForm{
@@ -79,4 +80,14 @@ main{
 #sectionTable table tbody td{
    text-align: center;
    padding: 5px 0;
+}
+
+@media (max-width: 1000px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        margin-bottom: 30px;
+    }
 }
